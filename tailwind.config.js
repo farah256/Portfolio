@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
     content: [
       "./index.html",
@@ -7,18 +8,19 @@ export default {
     theme: {
       extend: {
         colors:{
-            primary:'#f5f5f5f',
+            primary:'#f5f5f5',
             secondary:'#525453',
             accent: '#AC3C3C',
         },
         fontFamily: {
             sans: ['Kanit', 'sans-serif'],
-            heading: ['Cookie', 'sans-serif'],
+            heading: ['Cookie', 'cursive'],
           },
           spacing: {
             '128': '32rem',
             '144': '36rem',
           }
+
       },
     },
     plugins: [],
