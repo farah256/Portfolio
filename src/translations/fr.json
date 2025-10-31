@@ -1,0 +1,117 @@
+{
+    "nav": {
+      "about": "À Propos",
+      "education": "Éducation",
+      "skills": "Compétences",
+      "experience": "Expérience",
+      "projects": "Projets",
+      "activities": "Activités",
+      "contact": "Contact"
+    },
+    "header": {
+      "hello": "Salut, je suis Salmi Farah",
+      "softwareEngineer": "Ingénieure Logicielle",
+      "description": "Une ingénieure logicielle dévouée. Je combine un code propre avec un design réactif pour créer des applications robustes."
+    },
+    "about": {
+      "title": "À Propos de Moi",
+      "paragraph1": "Bonjour, je suis Farah, un esprit curieux qui adore transformer les idées en expériences digitales. J'étudie actuellement l'ingénierie logicielle, et je suis toujours ouverte à de nouvelles opportunités pour apprendre, collaborer et grandir.",
+      "paragraph2": "Au-delà du code, quand je ne code pas, vous me trouverez en train de lire, peindre ou explorer de nouveaux designs et idées de projets.",
+      "quote": "Mon objectif est de créer des applications qui ne sont pas seulement fonctionnelles, mais aussi belles et significatives."
+    },
+    "skills": {
+        "title": "Compétences & Technologies",
+        "scrollHint": "← Défilez pour voir plus →",
+        "backend": "Développeur Backend",
+        "frontend": "Développeur Frontend",
+        "mobile": "Développeur Mobile", 
+        "database": "Base de Données",
+        "tools": "Outils & Technologies"
+      },
+      "education": {
+        "title": "Formation",
+        "highschool": {
+          "year": "2019",
+          "degree": "Baccalauréat en Sciences Physiques",
+          "type": "Lycée"
+        },
+        "university": {
+          "year": "2020-Présent",
+          "degree": "Génie Logiciel",
+          "institution": "Ecole Nationale des Sciences Appliquées", 
+          "type": "Université"
+        }
+      },
+      "experience": {
+        "title": "Expérience",
+        "mobileDev": {
+          "title": "Développement Mobile",
+          "period": "Juillet – Août 2025", 
+          "company": "Open Majed Technologies",
+          "description": "Développé une *application cross-platform de suivi en temps réel des bus scolaires* connectant parents et chauffeurs. Converti les designs *Figma* en une application *Flutter* entièrement fonctionnelle et intégré le frontend avec le backend *Supabase* pour le suivi GPS en temps réel utilisant *Mapbox*. Travaillé avec des *sprints Agile* dans *Jira* et *GitLab CI/CD* pour assurer un développement et déploiement efficaces. Livré un *MVP* fonctionnel améliorant la sécurité et transparence du transport scolaire."
+        }
+      },
+      "projects": {
+        "title": "Projets",
+        "clickHint": "Cliquez pour voir les détails ↓",
+        "viewCode": "Voir le Code",
+        "livePreview": "Aperçu en Direct",
+        "features": "Fonctionnalités",
+        "projectsData": [
+          {
+            "title": "Système d'absence",
+            "description": "Une application mobile cross-platform en temps réel pour le suivi des bus scolaires avec mises à jour GPS en direct, communication parent-chauffeur et optimisation d'itinéraire.",
+            "fullDescription": "Développé un système complet de suivi de bus scolaire permettant aux parents de surveiller le bus scolaire de leurs enfants en temps réel. L'application comprend le suivi GPS en direct, les notifications d'arrivée et de départ, et un système de chat sécurisé entre parents et chauffeurs.",
+            "features": ["Suivi GPS en temps réel", "Messagerie parent-chauffeur", "Optimisation d'itinéraire", "Notifications push"]
+          },
+          {
+            "title": "Système de Location de Voitures",
+            "description": "Solution e-commerce full-stack avec authentification utilisateur, traitement de paiement et tableau de bord administrateur.",
+            "fullDescription": "Construit une plateforme e-commerce évolutive avec des fonctionnalités modernes incluant l'authentification utilisateur, le catalogue de produits, le panier d'achat, le traitement de paiement avec Stripe et le tableau de bord administrateur.",
+            "features": ["Authentification utilisateur", "Traitement de paiement", "Tableau de bord admin", "Gestion des produits"]
+          },
+          {
+            "title": "Compilateur de Langage",
+            "description": "Application de gestion de tâches collaborative avec mises à jour en temps réel et fonctionnalités de collaboration d'équipe.",
+            "fullDescription": "Créé une application de gestion de tâches collaborative permettant aux équipes de travailler ensemble efficacement avec des mises à jour en temps réel et des canaux de communication d'équipe.",
+            "features": ["Collaboration en temps réel", "Interface glisser-déposer", "Canaux d'équipe", "Suivi de progression"]
+          },
+          {
+            "title": "Système de Gestion de Bibliothèque",
+            "description": "Tableau de bord météorologique interactif avec prévisions basées sur la localisation et visualisation de données historiques.",
+            "fullDescription": "Développé un tableau de bord météorologique interactif fournissant des prévisions détaillées, des données météorologiques historiques et de belles visualisations de données.",
+            "features": ["Prévisions basées sur la localisation", "Données historiques", "Graphiques interactifs", "Prévisions multi-jours"]
+          }
+        ]
+      },
+      "activities": {
+        "title": "ACTIVITÉS",
+        "activitiesData": [
+          {
+            "title": "Chef d'Événement Sanitaire",
+            "description": "Organisé et géré un événement de santé dans notre école en partenariat avec des professionnels de la santé, coordonnant des collectes de sang, des analyses médicales et des ateliers de sensibilisation à la santé pour les étudiants et le personnel.",
+            "date": "Décembre 2023",
+            "features": ["Planification d'événement", "Coordination d'équipe", "Gestion des ressources"]
+          },
+          {
+            "title": "Secrétaire général de Club",
+            "description": "Servi en tant que Secrétaire pour le club académique de notre département, gérant les opérations administratives, organisant des ateliers techniques et facilitant la communication entre étudiants et faculté.",
+            "date": "2024-2025",
+            "features": ["Administration", "Organisation d'événements", "Leadership étudiant"]
+          }
+        ]
+      },
+    "contact": {
+      "title": "CONTACTEZ-MOI",
+      "name": "Votre nom",
+      "email": "votre.email@exemple.com",
+      "message": "Votre message ici...",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Merci ! Votre message a été envoyé avec succès.",
+      "error": "Désolé, une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer."
+    },
+    "footer": {
+      "copyright": "© 2025 Farah."
+    }
+  }
