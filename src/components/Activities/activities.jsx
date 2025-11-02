@@ -55,7 +55,7 @@ const Activities = () => {
             <div className="w-full relative">
                 {/* Activities Title - Full Width Behind Containers */}
                 <motion.div 
-                    className="w-full text-center absolute top-1/2 lg:top-1/3 transform -translate-x-1/2 -translate-y-1/2 z-0"
+                    className="w-full text-center absolute top-0 lg:top-1/3 transform -translate-x-1/2 -translate-y-1/2 z-0"
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                     transition={{ duration: 0.8, delay: 0.2 }}

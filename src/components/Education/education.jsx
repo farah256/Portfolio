@@ -93,17 +93,17 @@ const Education = () => {
                             </div>
 
                             {/* Content */}
-                            <div className={`w-1/2 ${index % 2 === 0 ? 'md:pl-8' : 'md:pr-8 md:text-right'}`}>
-                                <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
-                                    <div className="flex items-start gap-4">
+                            <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-8' : 'md:pr-8 md:text-right'}`}>
+                                <div className="bg-white rounded-lg border border-gray-200 p-4 md:p-6 shadow-sm">
+                                    <div className={`flex items-start gap-4 ${index % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
                                         {edu.type === t.education.university.type && (
-                                                <img 
-                                                    src={ensa} 
-                                                    alt="ENSA"
-                                                    className="w-20 h-20 object-contain"
-                                                />
+                                            <img 
+                                                src={ensa} 
+                                                alt="ENSA"
+                                                className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                                            />
                                         )}
-                                        <div className="flex-1">
+                                        <div className={`flex-1 ${index % 2 !== 0 ? 'md:text-right' : ''}`}>
                                             <h3 className="text-lg font-sans font-bold text-black mb-2">
                                                 {edu.degree}
                                             </h3>
