@@ -114,21 +114,7 @@ const Experience = () => {
                                         </motion.div>
                                     </div>
 
-                                    {/* Right: Image */}
-                                    <motion.div 
-                                        className="lg:w-3/3"
-                                        whileHover={{ scale: 1.02 }}
-                                        transition={{ duration: 0.3 }}
-                                        variants={itemVariants}
-                                    >
-                                        <motion.img 
-                                            src={exp.image} 
-                                            alt={exp.title}
-                                            className="w-15 h-15 md:w-25 md:h-25"
-                                            whileHover={{ scale: 1.1 }}
-                                            transition={{ duration: 0.3 }}
-                                        />
-                                    </motion.div>
+                                    
                                 </div>
 
                                 {/* Divider */}

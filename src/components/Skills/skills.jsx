@@ -1,7 +1,17 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useMemo, useCallback } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations/index';
+
+// Image preloading utility
+const useImagePreloader = (imagePaths) => {
+  useMemo(() => {
+    imagePaths.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [imagePaths]);
+};
 
 const Skills = () => {
     const ref = useRef(null);
@@ -9,7 +19,8 @@ const Skills = () => {
     const { currentLanguage } = useLanguage();
     const t = translations[currentLanguage];
 
-    const skills = [
+    // Memoize skills data
+    const skills = useMemo(() => [
         {
             title: t.skills.backend,
             technologies: [
@@ -57,9 +68,17 @@ const Skills = () => {
                 { name: "Figma", image: "src/assets/images/figma.png" },
             ]
         }
-    ];
+    ], [t]);
 
-    const containerVariants = {
+    // Preload all images
+    const allImagePaths = useMemo(() => 
+        skills.flatMap(skill => skill.technologies.map(tech => tech.image)),
+        [skills]
+    );
+    useImagePreloader(allImagePaths);
+
+    // Memoized animation variants
+    const containerVariants = useMemo(() => ({
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -67,9 +86,9 @@ const Skills = () => {
                 staggerChildren: 0.1
             }
         }
-    };
+    }), []);
 
-    const itemVariants = {
+    const itemVariants = useMemo(() => ({
         hidden: { 
             opacity: 0, 
             x: 50 
@@ -82,9 +101,9 @@ const Skills = () => {
                 ease: "easeOut"
             }
         }
-    };
+    }), []);
 
-    const cardVariants = {
+    const cardVariants = useMemo(() => ({
         hidden: { 
             opacity: 0, 
             y: 30 
@@ -105,9 +124,9 @@ const Skills = () => {
                 ease: "easeInOut"
             }
         }
-    };
+    }), []);
 
-    const iconVariants = {
+    const iconVariants = useMemo(() => ({
         hover: {
             scale: 1.2,
             rotate: 5,
@@ -116,7 +135,16 @@ const Skills = () => {
                 ease: "easeInOut"
             }
         }
-    };
+    }), []);
+
+    // Optimized event handlers
+    const handleSkillHover = useCallback((event) => {
+        // Optional: Add any hover side effects here
+    }, []);
+
+    const handleTechHover = useCallback((event) => {
+        // Optional: Add any hover side effects here
+    }, []);
 
     return (
         <section 
@@ -159,10 +187,12 @@ const Skills = () => {
                     >
                         {skills.map((skill, index) => (
                             <motion.div 
-                                key={index}
+                                key={`${skill.title}-${index}`}
                                 className="bg-white/90 backdrop-blur-md rounded-2xl border border-white/20 p-6 shadow-lg hover:shadow-xl cursor-pointer flex-shrink-0 w-80"
                                 variants={cardVariants}
                                 whileHover="hover"
+                                onHoverStart={handleSkillHover}
+                                style={{ willChange: 'transform' }} 
                             >
                                 {/* Skill Header */}
                                 <motion.div 
@@ -180,10 +210,11 @@ const Skills = () => {
                                 <div className="grid grid-cols-3 gap-4">
                                     {skill.technologies.map((tech, techIndex) => (
                                         <motion.div 
-                                            key={techIndex}
+                                            key={`${tech.name}-${techIndex}`}
                                             className="flex flex-col items-center gap-2 group"
                                             variants={itemVariants}
                                             whileHover="hover"
+                                            onHoverStart={handleTechHover}
                                         >
                                             <motion.div 
                                                 className="w-14 h-14 rounded-xl border border-gray-300 overflow-hidden bg-white/80 flex items-center justify-center shadow-sm hover:shadow-md backdrop-blur-sm"
@@ -193,6 +224,7 @@ const Skills = () => {
                                                     src={tech.image} 
                                                     alt={tech.name}
                                                     className="w-8 h-8 object-contain"
+                                                    decoding="async" 
                                                 />
                                             </motion.div>
                                             <motion.span 
