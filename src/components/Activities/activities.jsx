@@ -126,7 +126,7 @@ const Activities = () => {
                             <img 
                                 src={activitiesData[0].image} 
                                 alt={activitiesData[0].title}
-                                className="w-30 h-30 lg:w-auto lg:h-full object-contain mx-auto lg:mx-0"
+                                className="w-30 h-30 lg:w-auto rounded-l-[100px] rounded-[10px] lg:h-full object-contain mx-auto lg:mx-0"
                             />
                         </div>
                     </motion.div>
