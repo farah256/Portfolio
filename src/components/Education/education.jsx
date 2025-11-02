@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations/index';
+import ensa from '../../assets/images/ensa.png';
 
 const Education = () => {
     const { currentLanguage } = useLanguage();
@@ -97,7 +98,7 @@ const Education = () => {
                                     <div className="flex items-start gap-4">
                                         {edu.type === t.education.university.type && (
                                                 <img 
-                                                    src="src/assets/images/ensa.png" 
+                                                    src={ensa} 
                                                     alt="ENSA"
                                                     className="w-20 h-20 object-contain"
                                                 />

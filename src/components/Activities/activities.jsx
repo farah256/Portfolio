@@ -2,6 +2,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations/index';
+import certificatImage from '../../assets/images/certificat.png';
+import secretaireImage from '../../assets/images/secretaire.png';
+import jlmLogo from '../../assets/images/jlm.png';
+import codexLogo from '../../assets/images/codex.png';
+import activitiesBackground from '../../assets/images/activities.png';
 
 const Activities = () => {
     const ref = useRef(null);
@@ -12,8 +17,8 @@ const Activities = () => {
     const activitiesData = t.activities.activitiesData.map((activity, index) => ({
         ...activity,
         id: index + 1,
-        image: ["src/assets/images/certificat.png", "src/assets/images/secretaire.png"][index],
-        logo: ["src/assets/images/jlm.png", "src/assets/images/codex.png"][index]
+        image: [certificatImage, secretaireImage][index],
+        logo: [jlmLogo, codexLogo][index]
     }));
 
     const containerVariants = {
@@ -58,7 +63,7 @@ const Activities = () => {
                     <h1 
                         className="text-6xl lg:text-9xl xl:text-[15rem] font-black leading-none"
                         style={{
-                            backgroundImage: 'url(/src/assets/images/activities.png)',
+                            backgroundImage: `url(${activitiesBackground})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundClip: 'text',

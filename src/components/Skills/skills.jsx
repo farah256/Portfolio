@@ -3,6 +3,31 @@ import { useRef, useMemo, useCallback } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations/index';
 
+// Import all skill images
+import pythonImage from '../../assets/images/python.png';
+import javaImage from '../../assets/images/java.png';
+import phpImage from '../../assets/images/php.png';
+import springImage from '../../assets/images/spring.png';
+import cppImage from '../../assets/images/c++.png';
+import cImage from '../../assets/images/c.png';
+import reactImage from '../../assets/images/react.png';
+import jsImage from '../../assets/images/js.png';
+import htmlImage from '../../assets/images/html.png';
+import cssImage from '../../assets/images/css.png';
+import sassImage from '../../assets/images/sass.png';
+import androidImage from '../../assets/images/android.png';
+import flutterImage from '../../assets/images/flutter.png';
+import dartImage from '../../assets/images/dart.png';
+import mysqlImage from '../../assets/images/mysql.png';
+import mongodbImage from '../../assets/images/mongodb.png';
+import supabaseImage from '../../assets/images/supabase.png';
+import gitImage from '../../assets/images/git.png';
+import dockerImage from '../../assets/images/docker.png';
+import linuxImage from '../../assets/images/linux.png';
+import postmanImage from '../../assets/images/postman.png';
+import figmaImage from '../../assets/images/figma.png';
+import backgroundPattern from '../../assets/images/background-pattern.jpeg';
+
 // Image preloading utility
 const useImagePreloader = (imagePaths) => {
   useMemo(() => {
@@ -19,53 +44,53 @@ const Skills = () => {
     const { currentLanguage } = useLanguage();
     const t = translations[currentLanguage];
 
-    // Memoize skills data
+    // Memoize skills data with imported images
     const skills = useMemo(() => [
         {
             title: t.skills.backend,
             technologies: [
-                { name: "Python", image: "src/assets/images/python.png" },
-                { name: "Java", image: "src/assets/images/java.png" },
-                { name: "PHP", image: "src/assets/images/php.png" },
-                { name: "Spring", image: "src/assets/images/spring.png" },
-                { name: "C++", image: "src/assets/images/c++.png" },
-                { name: "C", image: "src/assets/images/c.png" }
+                { name: "Python", image: pythonImage },
+                { name: "Java", image: javaImage },
+                { name: "PHP", image: phpImage },
+                { name: "Spring", image: springImage },
+                { name: "C++", image: cppImage },
+                { name: "C", image: cImage }
             ]
         },
         {
             title: t.skills.frontend, 
             technologies: [
-                { name: "React", image: "src/assets/images/react.png" },
-                { name: "JavaScript", image: "src/assets/images/js.png" },
-                { name: "HTML", image: "src/assets/images/html.png" },
-                { name: "CSS", image: "src/assets/images/css.png" },
-                { name: "Sass", image: "src/assets/images/sass.png" }
+                { name: "React", image: reactImage },
+                { name: "JavaScript", image: jsImage },
+                { name: "HTML", image: htmlImage },
+                { name: "CSS", image: cssImage },
+                { name: "Sass", image: sassImage }
             ]
         },
         {
             title: t.skills.mobile,
             technologies: [
-                { name: "Android", image: "src/assets/images/android.png" },
-                { name: "Flutter", image: "src/assets/images/flutter.png" },
-                { name: "Dart", image: "src/assets/images/dart.png" },
+                { name: "Android", image: androidImage },
+                { name: "Flutter", image: flutterImage },
+                { name: "Dart", image: dartImage },
             ]
         },
         {
             title: t.skills.database,
             technologies: [
-                { name: "MySQL", image: "src/assets/images/mysql.png" },
-                { name: "MongoDB", image: "src/assets/images/mongodb.png" },
-                { name: "Supabase", image: "src/assets/images/supabase.png" },
+                { name: "MySQL", image: mysqlImage },
+                { name: "MongoDB", image: mongodbImage },
+                { name: "Supabase", image: supabaseImage },
             ]
         },
         {
             title: t.skills.tools,
             technologies: [
-                { name: "Git", image: "src/assets/images/git.png" },
-                { name: "Docker", image: "src/assets/images/docker.png" },
-                { name: "Linux", image: "src/assets/images/linux.png" },
-                { name: "Postman", image: "src/assets/images/postman.png" },
-                { name: "Figma", image: "src/assets/images/figma.png" },
+                { name: "Git", image: gitImage },
+                { name: "Docker", image: dockerImage },
+                { name: "Linux", image: linuxImage },
+                { name: "Postman", image: postmanImage },
+                { name: "Figma", image: figmaImage },
             ]
         }
     ], [t]);
@@ -152,7 +177,7 @@ const Skills = () => {
             id="skills" 
             className="py-20 relative bg-cover bg-center bg-fixed"
             style={{
-                backgroundImage: `url('src/assets/images/background-pattern.jpeg')`,
+                backgroundImage: `url(${backgroundPattern})`,
             }}
         >
             {/* Overlay for better readability */}

@@ -3,7 +3,10 @@ import { motion, useInView } from 'framer-motion';
 import { ContainerTextFlip } from "./../ui/layout-text-flip";
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations';
-
+import laptop from '../../assets/images/MacBook.png' ;
+import github from '../../assets/images/GitHub.png';
+import gmail from '../../assets/images/Google.png';
+import linkedin from'../../assets/images/LinkedIn.png';
 const Header = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
@@ -13,17 +16,17 @@ const Header = () => {
 
   const logos = useMemo(() => [
     { 
-      src: './../src/assets/images/LinkedIn.png', 
+      src: linkedin, 
       name: 'LinkedIn',
       url: 'https://www.linkedin.com/in/farah-salmi/' 
     },
     { 
-      src: './../src/assets/images/GitHub.png', 
+      src: github, 
       name: 'GitHub',
       url: 'https://github.com/farah256' 
     },
     { 
-      src: './../src/assets/images/Google Plus.png', 
+      src: gmail, 
       name: 'Google',
       url: 'mailto:farah.salmi02@gmail.com'
     },
@@ -145,7 +148,7 @@ const Header = () => {
             transition={{ duration: 1, delay: 0.4 }}
           >
             <img 
-              src="./../src/assets/images/MacBook Air.png" 
+              src ={laptop}
               alt="Salmi Farah - Professional Profile"
               className="w-full max-w-lg md:max-w-2xl h-auto"
               loading="eager"

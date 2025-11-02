@@ -2,6 +2,9 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import translations from '../../translations/index';
+import project1 from "../../assets/images/attendance.png";
+import project2 from "../../assets/images/rental-car.png";
+import project3 from "../../assets/images/medical-system.jpg";
 
 const Projects = () => {
     const ref = useRef(null);
@@ -15,9 +18,9 @@ const Projects = () => {
         ...project,
         id: index + 1,
         image: [
-            "src/assets/images/attendance.png",
-            "src/assets/images/rental-car.png",
-            "src/assets/images/medical-system.jpg",
+            project1,
+            project2,
+            project3,
         ][index],
         tags: [
             ["Spring boot", "Android", "React", "Mongo DB", "Dashboard", "Mobile"],
