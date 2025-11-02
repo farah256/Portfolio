@@ -1,122 +1,142 @@
 {
-    "nav": {
-      "about": "About",
-      "education": "Education",
-      "skills": "Skills",
-      "experience": "Experience",
-      "projects": "Projects",
-      "activities": "Activities",
-      "contact": "Contact"
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "activities": "Activities",
+    "contact": "Contact"
+  },
+  "header": {
+    "hello": "Hello, I'm Salmi Farah",
+    "softwareEngineer": "Software Engineer",
+    "description": "A dedicated Software Engineer. I combine clean code with responsive design to create robust applications."
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hey there, I'm Farah, a curious mind who loves transforming ideas into digital experiences. I'm currently studying software engineering, and I'm always open to new opportunities to learn, collaborate, and grow.",
+    "paragraph2": "Beyond Code, When I'm not coding, you'll find me reading, painting, or exploring new designs and project ideas.",
+    "quote": "My goal is to create apps that are not just functional, but also beautiful and meaningful."
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "scrollHint": "← Scroll to see more →",
+    "backend": "Backend Developer",
+    "frontend": "Frontend Developer",
+    "mobile": "Mobile Developer",
+    "database": "Database",
+    "tools": "Tools & Technologies"
+  },
+  "education": {
+    "title": "Education",
+    "highschool": {
+      "year": "2019",
+      "degree": "High School Diploma in Physical Sciences",
+      "type": "High School"
     },
-    "header": {
-      "hello": "Hello, I'm Salmi Farah",
-      "softwareEngineer": "Software Engineer",
-      "description": "A dedicated Software Engineer. I combine clean code with responsive design to create robust applications."
-    },
-    "about": {
-      "title": "About Me",
-      "paragraph1": "Hey there, I'm Farah, a curious mind who loves transforming ideas into digital experiences. I'm currently studying software engineering, and I'm always open to new opportunities to learn, collaborate, and grow.",
-      "paragraph2": "Beyond Code, When I'm not coding, you'll find me reading, painting, or exploring new designs and project ideas.",
-      "quote": "My goal is to create apps that are not just functional, but also beautiful and meaningful."
-    },
-    "skills": {
-        "title": "Skills & Technologies",
-        "scrollHint": "← Scroll to see more →",
-        "backend": "Backend Developer",
-        "frontend": "Frontend Developer", 
-        "mobile": "Mobile Developer",
-        "database": "Database",
-        "tools": "Tools & Technologies"
-      },
-      "education": {
-        "title": "Education",
-        "highschool": {
-          "year": "2019",
-          "degree": "High School Diploma in Physical Sciences",
-          "type": "High School"
-        },
-        "university": {
-          "year": "2020-Present",
-          "degree": "Software Engineering", 
-          "institution": "Ecole Nationale des Sciences Appliquées",
-          "type": "University"
-        }
-      },
-      "experience": {
-        "title": "Experience",
-        "mobileDev": {
-          "title": "Mobile Development",
-          "period": "July – August 2025",
-          "company": "Open Majed Technologies",
-          "description": "Built a *cross-platform real-time school bus tracking app* connecting parents and drivers. Converted *Figma* designs into a fully functional *Flutter* application and integrated the frontend with the *Supabase* backend for real-time GPS tracking using *Mapbox*. Worked with *Agile sprints* in *Jira* and *GitLab CI/CD* to ensure efficient development and deployment. Delivered a functional *MVP* enhancing school transport safety and transparency."
-        }
-      },
-      
-        "projects": {
-          "title": "Projects",
-          "clickHint": "Click to view details ↓",
-          "viewCode": "View Code",
-          "livePreview": "Live Preview",
-          "features": "Features",
-          "projectsData": [
-            {
-              "title": "Attendance System",
-              "description": "A real-time cross-platform mobile application for tracking school buses with live GPS updates, parent-driver communication, and route optimization.",
-              "fullDescription": "Developed a comprehensive school bus tracking system that allows parents to monitor their children's school bus in real-time. The app features live GPS tracking, push notifications for arrivals and departures, and a secure chat system between parents and drivers.",
-              "features": ["Real-time GPS tracking", "Parent-driver messaging", "Route optimization", "Push notifications"]
-            },
-            {
-              "title": "Rental Car System",
-              "description": "Full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.",
-              "fullDescription": "Built a scalable e-commerce platform with modern features including user authentication, product catalog, shopping cart, payment processing with Stripe, and admin dashboard.",
-              "features": ["User authentication", "Payment processing", "Admin dashboard", "Product management"]
-            },
-            {
-              "title": "Language Compiler",
-              "description": "Collaborative task management application with real-time updates and team collaboration features.",
-              "fullDescription": "Created a collaborative task management application that enables teams to work together efficiently with real-time updates and team communication channels.",
-              "features": ["Real-time collaboration", "Drag-and-drop interface", "Team channels", "Progress tracking"]
-            },
-            {
-              "title": "Library Management System",
-              "description": "Interactive weather dashboard with location-based forecasts and historical data visualization.",
-              "fullDescription": "Developed an interactive weather dashboard that provides detailed forecasts, historical weather data, and beautiful data visualizations.",
-              "features": ["Location-based forecasts", "Historical data", "Interactive charts", "Multi-day forecasts"]
-            }
-          ]
-        },
-    
-        "activities": {
-          "title": "ACTIVITIES",
-          "activitiesData": [
-            {
-              "title": "Health Event Coordinator",
-              "description": "Organized and managed a health event at our school in partnership with medical professionals, coordinating blood donation drives, medical analyses, and health awareness workshops for students and staff.",
-              "date": "December 2023",
-              "features": ["Event Planning", "Team Coordination", "Resource Management"]
-            },
-            {
-              "title": "Club Secretary - Math & Computer Science Department",
-              "description": "Served as Secretary for our department's academic club, managing administrative operations, organizing technical workshops, and facilitating communication between students and faculty.",
-              "date": "2024-2025",
-              "features": ["Administration", "Event Organization", "Student Leadership"]
-            }
-          ]
-        },
-    
-        
-    
-    "contact": {
-      "title": "CONTACT ME",
-      "name": "Your name",
-      "email": "your.email@example.com",
-      "message": "Your message here...",
-      "send": "Send",
-      "sending": "Sending...",
-      "success": "Thank you! Your message has been sent successfully.",
-      "error": "Sorry, there was an error sending your message. Please try again."
-    },
-    "footer": {
-      "copyright": "© 2025 Farah."
+    "university": {
+      "year": "2020-Present",
+      "degree": "Software Engineering",
+      "institution": "Ecole Nationale des Sciences Appliquées",
+      "type": "University"
     }
+  },
+  "experience": {
+    "title": "Experience",
+    "mobileDev": {
+      "title": "Mobile Development",
+      "period": "July – August 2025",
+      "company": "Open Majed Technologies",
+      "description": "Built a *cross-platform real-time school bus tracking app* connecting parents and drivers. Converted *Figma* designs into a fully functional *Flutter* application and integrated the frontend with the *Supabase* backend for real-time GPS tracking using *Mapbox*. Worked with *Agile sprints* in *Jira* and *GitLab CI/CD* to ensure efficient development and deployment. Delivered a functional *MVP* enhancing school transport safety and transparency."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "clickHint": "Click to view details ↓",
+    "viewCode": "View Code",
+    "livePreview": "Live Preview",
+    "features": "Features",
+    "projectsData": [
+      {
+        "title": "Attendance System",
+        "description": "Web and mobile application for student absence management with real-time tracking and advanced reporting",
+        "fullDescription": "NoSkip is a comprehensive absence management application developed with Spring Boot and React. It allows teachers to track student attendance, generate PDF/Excel reports and send automatic alerts. The application includes a native Android mobile version.",
+        "features": [
+          "Multi-role authentication",
+          "Class and student management",
+          "Real-time absence marking",
+          "Automatic alerts",
+          "Statistics and PDF/Excel reports",
+          "Personal notebook",
+          "Android mobile application"
+        ]
+      },
+      {
+        "title": "Rental Car System",
+        "description": "Vehicle rental platform with complete reservation",
+        "fullDescription": "Full-stack car rental solution developed with Spring Boot and React. The system includes user authentication, vehicle management, online bookings and a comprehensive admin dashboard.",
+        "features": [
+          "Customer and admin authentication",
+          "Vehicle management",
+          "Online booking with contracts",
+          "Admin dashboard",
+          "Search with advanced filters",
+          "Reports and statistics"
+        ]
+      },
+      {
+        "title": "Medical System",
+        "description": "Comprehensive medical management application with microservices architecture for patients, doctors and appointments",
+        "fullDescription": "Medical management system developed with microservices architecture using Spring Boot and Angular. The application manages patients, doctors, appointments, prescriptions and billing with enhanced security for sensitive medical data.",
+        "features": [
+          "Microservices architecture",
+          "Patient and medical records management",
+          "Appointment scheduling",
+          "Prescription management",
+          "Billing and payments",
+          "Role-based dashboards",
+          "Enhanced data security"
+        ]
+      }
+    ]
+  },
+  "activities": {
+    "title": "ACTIVITIES",
+    "activitiesData": [
+      {
+        "title": "Health Event Coordinator",
+        "description": "Organized and managed a health event at our school in partnership with medical professionals, coordinating blood donation drives, medical analyses, and health awareness workshops for students and staff.",
+        "date": "December 2023",
+        "features": [
+          "Event Planning",
+          "Team Coordination",
+          "Resource Management"
+        ]
+      },
+      {
+        "title": "Club Secretary - Math & Computer Science Department",
+        "description": "Served as Secretary for our department's academic club, managing administrative operations, organizing technical workshops, and facilitating communication between students and faculty.",
+        "date": "2024-2025",
+        "features": [
+          "Administration",
+          "Event Organization",
+          "Student Leadership"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "CONTACT ME",
+    "name": "Your name",
+    "email": "your.email@example.com",
+    "message": "Your message here...",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Thank you! Your message has been sent successfully.",
+    "error": "Sorry, there was an error sending your message. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2025 Farah."
   }
+}
