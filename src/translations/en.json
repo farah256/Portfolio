@@ -47,7 +47,7 @@
     "mobileDev": {
       "title": "Mobile Development",
       "period": "July – August 2025",
-      "company": "Open Majed Technologies",
+      "company": "Open Majd Technologies",
       "description": "Built a *cross-platform real-time school bus tracking app* connecting parents and drivers. Converted *Figma* designs into a fully functional *Flutter* application and integrated the frontend with the *Supabase* backend for real-time GPS tracking using *Mapbox*. Worked with *Agile sprints* in *Jira* and *GitLab CI/CD* to ensure efficient development and deployment. Delivered a functional *MVP* enhancing school transport safety and transparency."
     }
   },
